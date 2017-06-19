@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tin tức</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<!-- file css -->
+	<link rel="stylesheet" href="app/public/css/style.css">
+	<link rel="stylesheet" href="app/public/libs/slick/slick.css"> 
+	<link rel="stylesheet" href="app/public/libs/wow/animate.css"> 
+	<link rel="stylesheet" href="app/public/libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<script type="text/javascript" src="app/public/libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="app/public/libs/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app/public/libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="app/public/libs/wow/wow.js"></script>
+	<script src="app/public/libs/angular/angular.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+</head>
+<body>
+	<header>
+		<div class="nav-top">
+			<div class="container ">
+				<div class="row ">
+				<div class="col-lg-12  ">
+					<!-- <ul class="nav navbar-nav nav-left">
+						<li><a><i class="fa fa-phone"></i> Hotline: 0964 010 942</a></li>
+					</ul> -->
+
+					<ul class="nav navbar-nav navbar-right ">
+						<li><a href="lien-he.html"><i class="fa fa-phone"></i>Hotline: 0964 010 942</a></li>
+						<li><a href="check-order.html"><i class="fa fa-pencil-square"></i>Kiểm tra đơn hàng</a></li>
+						<li><a href="login.html"><i class="fa fa-sign-in"></i>Đăng nhập</a></li>
+						<li><a href="register.html"><i class="fa fa-key"></i>Đăng kí</a></li>
+					</ul>
+				</div>
+				<!-- end col -->
+				</div>
+				<!-- end row -->	
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end nav-top	 -->
+		
+		<div class="head">
+			<div class="container head">
+				<div class="row">
+					<div class="col-lg-4 logo">
+						<a href="index.html"><img src="img/logo.png" ></a>
+					</div>
+					<!-- end col -->
+					<div class="col-lg-8">
+						<div class="method">
+							<p class="pull-left"><i class="fa fa-truck"></i>GIAO HÀNG MIỄN PHÍ</p>
+							<p class="pull-left"><i class="fa fa-money"></i>THANH TOÁN LINH HOẠT</p>
+							<p class="pull-left"><i class="fa fa-refresh"></i>TRẢ HÀNG TRONG 30 NGÀY</p>
+						</div>
+						<!-- end method -->
+						<div class="form">
+							<input class="pull-left" type="text" placeholder="Tìm kiếm.." >
+							<select class=" pull-left">
+								<option >Tất cả</option>
+								<option >Thời trang nam</option>
+								<option >Thời trang nữ</option>
+								<option >Phụ kiện nam</option>
+								<option >Phụ kiện nữ</option>
+								<option >Làm đẹp</option>
+								<option >Hàng gia dụng</option>
+								<option >Thời trang trẻ em</option>
+							</select>
+							<button class=" pull-left"><i class="fa fa-search"></i></button>
+							<div class=" pull-right">
+								<a href="cart.html" class="cart"><i class="fa fa-shopping-cart "></i>0sp - 0đ</a>
+							</div>
+						<!-- end form -->
+						</div>
+						<!-- end col	 -->
+					</div>
+					<!-- end row -->
+				</div>
+				<!-- end container -->
+			</div>
+		</div>
+		<!-- end head -->
+	</header>
+	<!-- end header	 -->
+	<nav>
+		<div class="container">
+			<div class="row">
+				<div class="menu  " >
+					
+					<div  class="navbar-header navbar-toggle" data-toggle="collapse" data-target="#drop-menu" >
+						<a href="#" class="navbar-brand"><i class="fa fa-th-list "></i>Menu <i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul id="drop-menu" class="nav navbar-nav collapse navbar-collapse">
+						<li class="nav-headding"><i class="fa fa-bars" aria-hidden="true"></i>DANH MỤC SẢN PHẨM <i class="fa fa-angle-down"></i>
+							<div class="left-menu">
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#"><i class="fa fa-angle-right"></i>Thời trang nam</a>
+							<div class="mega">
+								<div class="mega-col">
+									<h4><a href="#">QUẦN NAM</a></h4>
+									<a href="">Quần short/lửng nam</a>
+									<a href="#">Quần dài nam</a>
+									<h4><a href="#">BỘ ĐỒ THỂ THAO</a></h4>
+
+								</div>
+								<!-- end mega-col -->
+								<div class="mega-col">
+									<h4><a href="#">ÁO NAM</a></h4>
+									<a href="#">Áo sơ mi nam</a>
+									<a href="#">Áo thun nam</a>
+									<h4><a href="#">ÁO KHOÁC NAM</a></h4>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+								</div>
+								<!-- end mega-col -->
+							</div>
+							<!-- end mega -->
+						</li>
+						<li class="list-group-item"><a href="#"><i class="fa fa-angle-right"></i>Thời trang nữ</a>
+							<div class="mega">
+								<div class="mega-col">
+									<h4><a href="#">QUẦN NAM</a></h4>
+									<a href="">Quần short/lửng nam</a>
+									<a href="#">Quần dài nam</a>
+									<h4><a href="#">BỘ ĐỒ THỂ THAO</a></h4>
+
+								</div>
+								<!-- end mega-col -->
+								<div class="mega-col">
+									<h4><a href="#">ÁO NAM</a></h4>
+									<a href="#">Áo sơ mi nam</a>
+									<a href="#">Áo thun nam</a>
+									<h4><a href="#">ÁO KHOÁC NAM</a></h4>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+								</div>
+								<!-- end mega-col -->
+							</div>
+							<!-- end mega -->
+						</li>
+						<li class="list-group-item"><a href="#"><i class="fa fa-angle-right"></i>Phụ kiện nam</a>
+							<div class="mega">
+								<div class="mega-col">
+									<h4><a href="#">QUẦN NAM</a></h4>
+									<a href="">Quần short/lửng nam</a>
+									<a href="#">Quần dài nam</a>
+									<h4><a href="#">BỘ ĐỒ THỂ THAO</a></h4>
+
+								</div>
+								<!-- end mega-col -->
+								<div class="mega-col">
+									<h4><a href="#">ÁO NAM</a></h4>
+									<a href="#">Áo sơ mi nam</a>
+									<a href="#">Áo thun nam</a>
+									<h4><a href="#">ÁO KHOÁC NAM</a></h4>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+								</div>
+								<!-- end mega-col -->
+							</div>
+							<!-- end mega -->
+						</li>
+						<li class="list-group-item"><a href="#"><i class="fa fa-angle-right"></i>Phụ kiện nữ</a>
+							<div class="mega">
+								<div class="mega-col">
+									<h4><a href="#">QUẦN NAM</a></h4>
+									<a href="">Quần short/lửng nam</a>
+									<a href="#">Quần dài nam</a>
+									<h4><a href="#">BỘ ĐỒ THỂ THAO</a></h4>
+
+								</div>
+								<!-- end mega-col -->
+								<div class="mega-col">
+									<h4><a href="#">ÁO NAM</a></h4>
+									<a href="#">Áo sơ mi nam</a>
+									<a href="#">Áo thun nam</a>
+									<h4><a href="#">ÁO KHOÁC NAM</a></h4>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+									<a href="#">	Áo khoác dù/ da</a>
+								</div>
+								<!-- end mega-col -->
+							</div>
+							<!-- end mega -->
+						</li>
+						<li class="list-group-item"><a href="#"><i class="fa fa-angle-right"></i>Làm đẹp</a></li>
+						<li class="list-group-item"><a href="#"><i class="fa fa-angle-right"></i>Hàng gia dụng</a></li>
+						<li class="list-group-item"><a href="#"><i class="fa fa-angle-right"></i>Thời trang trẻ em</a></li>
+					</ul>
+				</div>
+						
+						</li>
+						<!-- <li><a href="#">TRANG CHỦ</a></li> -->
+						<li><a href="index.html">TRANG CHỦ</a></li>
+						<li class="dropdown"><a href="san-pham.html"><i class="fa fa-angle-down pull-right"></i>SẢN PHẨM</a>
+							<ul>
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Item</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="tin-tuc.html"><i class="fa fa-angle-down pull-right"></i>TIN TỨC</a>
+							<ul>
+								<li><a href="#">sub menu</a></li>
+								<li><a href="#">sub menu</a></li>
+								<li><a href="#">sub menu</a></li>
+							</ul>
+						</li>
+						<li><a href="gioi-thieu.html">GIỚI THIỆU</a></li>
+						<li><a href="lien-he.html">LIÊN HỆ</a></li>
+						<li><a href="ban-do.html">BẢN ĐỒ</a></li>
+					</ul>
+				</div>
+				<!-- end menu -->
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end container -->
+	</nav>
+	<!-- end nav -->
+
+	<article>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="title">
+						<h3>Tin tức</h3>
+					</div>
+					<!-- end title -->
+					<ul class="menu-left">
+						<li><a href=""><i class="fa fa-angle-right"></i>Đăng nhập</a></li>
+						<li><a href=""><i class="fa fa-angle-right"></i>Đăng ký</a></li>
+						<li><a href="login.html"><i class="fa fa-angle-right"></i>Quên mật khẩu</a></li>
+					</ul>
+					
+				</div>
+				<div class="col-md-9">
+					<div class="router">
+						<a href="index.html">Trang chủ <i class="fa fa-angle-double-right"></i></a>
+						<p>Đăng nhập</p>
+					</div>
+					<!-- end router -->
+					<div class="title">
+						<h3>Đăng ký tài khoản</h3>
+					</div>
+					<!-- end title -->
+					<div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
+						<form class="horizontal">
+							<h2 class="text-center">Thông tin tài khoản</h2>
+							<div class="form-group">
+								<label for="Code" class="col-sm-3 control-label">Tài khoản
+									<span class="warning">(*)</span>
+								</label>
+								<div class="col-sm-9 equal">
+									<input type="text" class="form-control" required="true">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-sm-3 control-label">Email
+									<span class="warning">(*)</span>
+								</label>
+								<div class="col-sm-9 equal">
+									<input type="email" class="form-control" required="true">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-sm-3 control-label">Mật khẩu
+									<span class="warning">(*)</span>
+								</label>
+								<div class="col-sm-9 equal">
+									<input type="password" class="form-control" required="true">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="Repassword" class="col-sm-3 control-label">Nhập lại mật khẩu
+									<span class="warning">(*)</span>
+								</label>
+								<div class="col-sm-9 equal">
+									<input type="password" class="form-control" required="true">
+								</div>
+							</div>
+							<h2 class="text-center">Thông tin cá nhân</h2>
+							<div class="form-group">
+								<label for="Name" class="col-sm-3 control-label">Họ tên
+									<span class="warning">(*)</span>
+								</label>
+								<div class="col-sm-9 equal">
+									<input type="text" class="form-control" required="true">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Giới tính
+								</label>
+								<div class="col-sm-9 equal">
+									<select class="form-control">
+										<option value="number:0" label="Nữ">Nữ</option>
+										<option value="number:1" label="Nam">Nam</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group form-inline">
+								<label class="col-sm-3 control-label">Ngày sinh</label>
+								<div class="col-sm-9 equal">
+									<select class="col-md-4 form-control">
+										<option value="number:1" label="1" selected="selected">1</option>
+										<option value="number:2" label="2">2</option>
+										<option value="number:3" label="3">3</option>
+										<option value="number:4" label="4">4</option>
+										<option value="number:5" label="5">5</option>
+										<option value="number:6" label="6">6</option>
+										<option value="number:7" label="7">7</option>
+										<option value="number:8" label="8">8</option>
+										<option value="number:9" label="9">9</option>
+										<option value="number:10" label="10">10</option>
+										<option value="number:11" label="11">11</option>
+										<option value="number:12" label="12">12</option>
+										<option value="number:13" label="13">13</option>
+										<option value="number:14" label="14">14</option>
+										<option value="number:15" label="15">15</option>
+										<option value="number:16" label="16">16</option>
+										<option value="number:17" label="17">17</option>
+										<option value="number:18" label="18">18</option>
+										<option value="number:19" label="19">19</option>
+										<option value="number:20" label="20">20</option>
+										<option value="number:21" label="21">21</option>
+										<option value="number:22" label="22">22</option>
+										<option value="number:23" label="23">23</option>
+										<option value="number:24" label="24">24</option>
+										<option value="number:25" label="25">25</option>
+										<option value="number:26" label="26">26</option>
+										<option value="number:27" label="27">27</option>
+										<option value="number:28" label="28">28</option>
+										<option value="number:29" label="29">29</option>
+										<option value="number:30" label="30">30</option>
+										<option value="number:31" label="31">31</option>
+									</select>
+									<select class="col-md-4 form-control">
+										<option value="number:1" label="1" selected="selected">1</option>
+										<option value="number:2" label="2">2</option>
+										<option value="number:3" label="3">3</option>
+										<option value="number:4" label="4">4</option>
+										<option value="number:5" label="5">5</option>
+										<option value="number:6" label="6">6</option>
+										<option value="number:7" label="7">7</option>
+										<option value="number:8" label="8">8</option>
+										<option value="number:9" label="9">9</option>
+										<option value="number:10" label="10">10</option>
+										<option value="number:11" label="11">11</option>
+										<option value="number:12" label="12">12</option>
+									</select>
+									<select class="col-md-4 form-control">
+										
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for class="col-sm-3 control-label">Điện thoại</label>
+								<div class="col-sm-9 equal">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for class="col-sm-3 control-label">Địa chỉ</label>
+								<div class="col-sm-9 equal">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Tỉnh/TP</label>
+								<div class="col-sm-9 equal">
+									<select class="form-control">
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Quận/Huyện</label>
+								<div class="col-sm-9 equal">
+									<select class="form-control">
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+								</div>	
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-4 col-sm-8">
+									<button type="submit" class="btn btn-default register">Đăng ký</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row logo-bot">
+				<div class="col-lg-12">
+					<img src="img/lg1.jpg">
+					<img src="img/lg2.jpg">
+					<img src="img/lg3.jpg">
+					<img src="img/lg4.jpg">
+					<img src="img/lg5.jpg">
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- end article -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 col-lg-3">
+					<h4>GIỚI THIỆU</h4>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#">Về chúng tôi</a></li>
+						<li class="list-group-item"><a href="#">Quy chế giao dịch TMĐT</a></li>
+						<li class="list-group-item"><a href="#">Giải quyết khiếu nại - Bảo hành</a></li>
+						<li class="list-group-item"><a href="#">Quy định giao hàng - Đổi trả hàng</a></li>
+						<li class="list-group-item"><a href="#">Chính sách bảo mật</a></li>
+					</ul>	
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-3">
+					<h4>TRỢ GIÚP</h4>
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#">Hướng dẫn mua hàng</a></li>
+						<li class="list-group-item"><a href="#">Hướng dẫn thanh toán</a></li>
+						<li class="list-group-item"><a href="#">Hỏi đáp</a></li>
+						<li class="list-group-item"><a href="#">Liên hệ</a></li>
+						
+					</ul>	
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-3 myfoot">
+					<h4>THÔNG TIN CÔNG TY</h4>
+					<ul class="list-group">
+						<li class="list-group-item">RUNTIME</li>
+						<li class="list-group-item"><i class="fa fa-map-marker"></i> Ngõ 337 Phạm Văn Đồng - Từ Liêm -Hà Nội</li>
+						<li class="list-group-item"><i class="fa fa-envelope"></i> trieutruong.qt@gmail.com</li>
+						<li class="list-group-item"><i class="fa fa-phone"></i> Phone: 0964 010 942</li>
+						
+					</ul>	
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-3">
+					<h4><a href="http://fb.com/hoangsnow9x">FACEBOOK</a></h4>
+				</div>
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end container -->
+	</footer>
+	<!-- end footer -->
+
+
+
+</body>
+</html>
+
